@@ -19,41 +19,34 @@ const INFO = {
 	},
 
 	about: {
-		title: "I’m Tharindu N. I live in Sri Lanka, where I design the future.",
+		title:"Ravkeerat Singh | Passionate Full-Stack Developer",
 		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
-	},
-
-	articles: {
-		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
-		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
+			"Hello there, I'm Ravkeerat Singh, a recent graduate with an undeniable passion for technology and design. My dream is to become a full-stack software developer, equipped with expertise in both front-end and back-end technologies. I'm excited to gain practical experience and collaborate with seasoned professionals to master languages like HTML, CSS, JavaScript for the front-end, and Node.js and databases like MongoDB for the back-end. With unwavering commitment, boundless creativity, and keen attention to detail, I'm ready to take on any challenges that come my way. My ultimate goal is to craft visually captivating and user-friendly websites and applications that leave a lasting impact.",
 	},
 
 	projects: [
 		{
-			title: "Project 1",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
+			title: "Time Master Application - Simplifying Employee Time Management",
+			description: `• Created a user-friendly application enabling employees to view schedules, clock in/out, request time off, and update passwords.
+			• Implemented manager functionalities for employee management, schedule updates, and announcements.`,
+			// logo: '../public/icon.png',
+			linkText: "Time Master Application",
+			link: 'https://time-master.herokuapp.com/',
 		},
 
 		{
-			title: "Project 2",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
-			linkText: "View Project",
-			link: "https://github.com",
+			title: "Quote Generator - A Simple Quote Generator",
+			description:"Developed a webpage application that generates quotes and allows sharing on Twitter, translation into multiple languages, and text-to-speech functionality. ",
+			// logo: "../public/icon.png",
+			linkText: "Quote Generator ",
+			link: 'https://ravkeerat02.github.io/Quote-generator/',
 		},
 
 		{
 			title: "Project 3",
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
+			// logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
 			linkText: "View Project",
 			link: "https://github.com",
 		},
@@ -62,7 +55,6 @@ const INFO = {
 			title: "Project 4",
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 			linkText: "View Project",
 			link: "https://github.com",
 		},
