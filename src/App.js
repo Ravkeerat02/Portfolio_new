@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
+// google analytics
 import ReactGA from "react-ga4";
 
 import Homepage from "./pages/homepage";
