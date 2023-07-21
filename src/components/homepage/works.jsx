@@ -1,14 +1,14 @@
 import React from "react";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+// import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
-import Card from "../common/card";
+// import Card from "../common/card";
 
 import "./styles/works.css";
 
 const Works = () => {
 	return (
 		<div className="works">
-			<Card
+			{/* <Card
 				icon={faBriefcase}
 				title="Work"
 				body={
@@ -39,8 +39,8 @@ const Works = () => {
 							<div className="work-duration">2019 - Present</div>
 						</div>
 					</div>
-				}
-			/>
+				} */}
+			{/* /> */}
 		</div>
 	);
 };
