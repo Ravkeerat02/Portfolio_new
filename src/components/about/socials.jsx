@@ -66,7 +66,6 @@ const Socials = () => {
 						<div className="social-icon">
 							<FontAwesomeIcon icon={faEnvelope} />
 						</div>
-
 						<div className="social-text">{INFO.main.email}</div>
 					</a>
 				</div>
