@@ -3,16 +3,13 @@ import { Helmet } from "react-helmet";
 
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faGithub,
-} from "@fortawesome/free-brands-svg-icons";
+import {faGithub,} from "@fortawesome/free-brands-svg-icons";
 
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
 import Works from "../components/homepage/works";
 import AllProjects from "../components/projects/allProjects";
-
 import INFO from "../data/user";
 import SEO from "../data/seo";
 
@@ -66,6 +63,7 @@ const Homepage = () => {
 
 	return (
 		<React.Fragment>
+			{/* Playing with HTML content */}
 			<Helmet>
 				<title>{INFO.main.title}</title>
 				<meta name="description" content={currentSEO.description} />
@@ -99,11 +97,11 @@ const Homepage = () => {
 							<div className="homepage-first-area-right-side">
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
-										<img
+										{/* <img
 											src="homepage.jpg"
 											alt="about"
 											className="homepage-image"
-										/>
+										/> */}
 									</div>
 								</div>
 							</div>
