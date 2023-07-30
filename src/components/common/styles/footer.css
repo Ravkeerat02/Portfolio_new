@@ -1,7 +1,7 @@
 @import "../../../data/styles.css";
 
 .footer {
-	display: flex;
+	display: fixed;
 	padding-top: 25px;
 	margin-top: 50px;
 	padding-bottom: 25px;

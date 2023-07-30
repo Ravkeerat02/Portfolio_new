@@ -6,6 +6,7 @@ import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import AllProjects from "../components/projects/allProjects";
 
+
 import INFO from "../data/user";
 import SEO from "../data/seo";
 
@@ -39,26 +40,30 @@ const Projects = () => {
 					</div>
 					<div className="projects-container">
 						<div className="title projects-title">
-							Things I’ve made trying to put my dent in the
-							universe.
+							Projects I've Worked On
 						</div>
 
 						<div className="subtitle projects-subtitle">
-							I've worked on a variety of projects over the years
-							and I'm proud of the progress I've made. Many of
-							these projects are open-source and available for
-							others to explore and contribute to. If you're
-							interested in any of the projects I've worked on,
-							please feel free to check out the code and suggest
-							any improvements or enhancements you might have in
-							mind. Collaborating with others is a great way to
-							learn and grow, and I'm always open to new ideas and
-							feedback.
+						Welcome to my projects section! Here, I showcase captivating applications built on the dynamic MERN stack – MongoDB, Express, React, and Node.js. These cutting-edge technologies fuel my passion for crafting seamless and innovative web solutions. Explore my work here and on GitHub to see the exciting projects that represent my journey of continuous learning and growth. Let's embark on this coding adventure together, powered by the possibilities of the MERN stack!
 						</div>
+						
+
+						<div className="github-link">
+							<a
+								href="https://github.com/ravkeerat02"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Explore More on GitHub
+							</a>
+						</div>
+
 
 						<div className="projects-list">
 							<AllProjects />
 						</div>
+
+						
 					</div>
 					<div className="page-footer">
 						<Footer />
