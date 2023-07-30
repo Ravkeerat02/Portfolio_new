@@ -13,7 +13,7 @@ const INFO = {
 	},
 
 	homepage: {
-		title: "Welcome to My Tech Journey: Ravkeerat's Tech Portfolio",
+		title: "Ravkeerat Singh's Portfolio",
 		description:
 		"I am an aspiring software developer with a strong foundation in the front-end stack, specifically the MERN stack. My passion for technology and commitment to learning drive me to pursue a career in software development. I am equipped with the necessary skills and knowledge to create visually appealing and user-friendly web applications. With a focus on front-end technologies such as HTML, CSS, JavaScript, and proficiency in frameworks like React, I am eager to contribute to innovative projects and continue honing my expertise in the ever-evolving world of software development."
 	},
