@@ -12,6 +12,7 @@ const AllProjects = () => {
 						title={project.title}
 						description={project.description}
 						linkText={project.linkText}
+						github={project.Github}
 						link={project.link}
 					/>
 				</div>
