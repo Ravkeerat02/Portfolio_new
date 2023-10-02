@@ -50,6 +50,22 @@ const INFO = {
 			Github: "https://github.com/Ravkeerat02/BuzzChat",
 			link: "https://github.com/Ravkeerat02/BuzzChat",
 		},
+		{
+			title: "CarHub ",
+			description:
+				"Carhub is a web application for exploring and comparing different car models. It provides a user-friendly interface for searching, sorting, and filtering car listings, as well as detailed information about each car.",
+			linkText: "CarHub",
+			Github: "https://github.com/Ravkeerat02/CarHub",
+			link: "https://car-hub-nine-rust.vercel.app/",
+		},
+		{
+			title: "AI Text Summarizer",
+			description:
+				"Web based application which uses GPT4 based AI to summarize artciles baseed on the link provided",
+			linkText: "AI text summarizer",
+			Github: "https://github.com/Ravkeerat02/AI-Text",
+			link: "https://ai-text-six.vercel.app/",
+		},
 	],
 };
 
