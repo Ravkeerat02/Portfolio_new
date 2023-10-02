@@ -19,9 +19,9 @@ const INFO = {
 	},
 
 	about: {
-		title: "Ravkeerat Singh | Passionate Full-Stack Developer",
+		title: "About Ravkeerat Singh",
 		description:
-			"Hello there, I'm Ravkeerat Singh, a recent graduate with an undeniable passion for technology and design. My dream is to become a full-stack software developer, equipped with expertise in both front-end and back-end technologies. I'm excited to gain practical experience and collaborate with seasoned professionals to master languages like HTML, CSS, JavaScript for the front-end, and Node.js and databases like MongoDB for the back-end. With unwavering commitment, boundless creativity, and keen attention to detail, I'm ready to take on any challenges that come my way. My ultimate goal is to craft visually captivating and user-friendly websites and applications that leave a lasting impact.",
+			"I'm Ravkeerat Singh, a recent graduate deeply passionate about technology and design. My aim is to be a skilled full-stack developer, specializing in the MERN stack (MongoDB, Express.js, React, Node.js).I'm prepared to overcome challenges and craft engaging, user-friendly websites and applications. Join me on this thrilling journey of innovation and meaningful impact. ",
 	},
 
 	projects: [
