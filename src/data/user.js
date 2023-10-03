@@ -40,7 +40,7 @@ const INFO = {
 		),
 	},
 	about: {
-		title: "About Ravkeerat Singh",
+		title: "About Me",
 		description: (
 			<p
 				style={{
