@@ -14,6 +14,7 @@ import "./styles/socials.css";
 const Socials = () => {
 	return (
 		<div className="socials">
+			<h2>Connect with me on</h2>
 			<div className="social">
 				<a href={INFO.socials.github} target="_blank" rel="noreferrer">
 					<div className="social-icon">
@@ -25,7 +26,6 @@ const Socials = () => {
 					<div className="social-text">Follow on GitHub</div>
 				</a>
 			</div>
-
 			<div className="social">
 				<a
 					href={INFO.socials.linkedin}

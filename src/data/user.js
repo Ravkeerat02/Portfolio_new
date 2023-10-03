@@ -13,17 +13,54 @@ const INFO = {
 	},
 
 	homepage: {
-		title: "Ravkeerat Singh's Portfolio",
-		description:
-			"I am an aspiring software developer with a strong foundation in the front-end stack, specifically the MERN stack. My passion for technology and commitment to learning drive me to pursue a career in software development. I am equipped with the necessary skills and knowledge to create visually appealing and user-friendly web applications. With a focus on front-end technologies such as HTML, CSS, JavaScript, and proficiency in frameworks like React, I am eager to contribute to innovative projects and continue honing my expertise in the ever-evolving world of software development.",
+		title: (
+			<h1 style={{ fontSize: "36px", color: "#333" }}>
+				<strong>Ravkeerat Singh's Portfolio</strong>
+			</h1>
+		),
+		description: (
+			<p
+				style={{
+					fontFamily: "Arial, sans-serif",
+					fontSize: "18px",
+					color: "#555",
+				}}
+			>
+				I am an aspiring software developer with a strong foundation in
+				the front-end stack, specifically the MERN stack. My passion for
+				technology and commitment to learning drive me to pursue a
+				career in software development. I am equipped with the necessary
+				skills and knowledge to create visually appealing and
+				user-friendly web applications. With a focus on front-end
+				technologies such as HTML, CSS, JavaScript, and proficiency in
+				frameworks like React, I am eager to contribute to innovative
+				projects and continue honing my expertise in the ever-evolving
+				world of software development.
+			</p>
+		),
 	},
-
 	about: {
 		title: "About Ravkeerat Singh",
-		description:
-			"I'm Ravkeerat Singh, a recent graduate deeply passionate about technology and design. My aim is to be a skilled full-stack developer, specializing in the MERN stack (MongoDB, Express.js, React, Node.js).I'm prepared to overcome challenges and craft engaging, user-friendly websites and applications. Join me on this thrilling journey of innovation and meaningful impact. ",
+		description: (
+			<p
+				style={{
+					fontFamily: "Arial, sans-serif",
+					fontSize: "18px",
+					color: "#333",
+				}}
+			>
+				I'm <strong>Ravkeerat Singh</strong>, a recent graduate deeply
+				passionate about technology and design. My aim is to be a
+				skilled full-stack developer, specializing in the{" "}
+				<strong style={{ color: "blue" }}>
+					MERN stack (MongoDB, Express.js, React, Node.js)
+				</strong>
+				. I'm prepared to overcome challenges and craft engaging,
+				user-friendly websites and applications. Join me on this
+				thrilling journey of innovation and meaningful impact.
+			</p>
+		),
 	},
-
 	projects: [
 		{
 			title: "Time Master Application - Simplifying Employee Time Management",

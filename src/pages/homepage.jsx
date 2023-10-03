@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faGithub,} from "@fortawesome/free-brands-svg-icons";
-
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
@@ -12,7 +8,6 @@ import Works from "../components/homepage/works";
 import AllProjects from "../components/projects/allProjects";
 import INFO from "../data/user";
 import SEO from "../data/seo";
-
 
 import "./styles/homepage.css";
 
@@ -90,7 +85,9 @@ const Homepage = () => {
 								</div>
 
 								<div className="subtitle homepage-subtitle">
-									{INFO.homepage.description}
+									<p className="homepage-description">
+										{INFO.homepage.description}
+									</p>
 								</div>
 							</div>
 
@@ -104,39 +101,6 @@ const Homepage = () => {
 										/> */}
 									</div>
 								</div>
-							</div>
-						</div>
-
-						<div className="homepage-socials">
-							<a
-								href={INFO.socials.github}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faGithub}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={`mailto:${INFO.main.email}`}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faMailBulk}
-									className="homepage-social-icon"
-								/>
-							</a>
-						</div>
-
-						<div className="homepage-projects">
-							<AllProjects />
-						</div>
-
-						<div className="homepage-about">
-							<div className="homepage-works">
-								<Works />
 							</div>
 						</div>
 
