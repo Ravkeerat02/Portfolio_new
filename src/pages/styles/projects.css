@@ -21,6 +21,14 @@
 	margin: 0;
 	padding-top: 120px;
 }
+.projects-subtitle {
+	margin-top: 10px;
+	font-family: "Montserrat", sans-serif;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 24px;
+	color: #000000;
+}
 
 @media (max-width: 600px) {
 	.projects-container {

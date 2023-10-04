@@ -3,12 +3,13 @@ import { Helmet } from "react-helmet";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
+
 import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./styles/projects.css";
 
 const Projects = () => {
@@ -32,17 +33,13 @@ const Projects = () => {
 			<div className="page-content">
 				<NavBar active="projects" />
 				<div className="content-wrapper">
-					<div className="projects-logo-container">
-						<div className="projects-logo">
-							<Logo width={50} />
-						</div>
-					</div>
+					<div className="projects-logo-container"></div>
 					<div className="projects-container">
 						<div className="title projects-title">
 							Projects I've Worked On
 						</div>
 
-						<div className="subtitle projects-subtitle">
+						<div className="projects-subtitle">
 							Explore my Projects Section, where I showcase
 							captivating applications developed on the dynamic
 							MERN stack – MongoDB, Express, React, and Node.js.
@@ -60,7 +57,8 @@ const Projects = () => {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								Explore More on GitHub
+								<FontAwesomeIcon icon={faGithub} />
+								<span>Explore More on GitHub</span>
 							</a>
 						</div>
 

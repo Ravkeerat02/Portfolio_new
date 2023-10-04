@@ -3,7 +3,14 @@
 .card {
 	mix-blend-mode: normal;
 	border-radius: 20px;
-	outline: 2px solid #f4f4f5;
+	outline: 2px solid #333;
+	background-color: #333; /* Card background color */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+	transition: box-shadow 0.3s ease; /* Add smooth transition for the shadow */
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
 }
 
 .card-container {
@@ -17,18 +24,26 @@
 }
 
 .card-icon {
-	font-size: 15px;
-	color: var(--tertiary-color);
+	font-size: 20px; /* Increase icon size */
+	color: var(--primary-color); /* Change icon color */
 }
 
 .card-title {
-	color: var(--secondary-color);
-	font-size: 14px;
+	color: var(--primary-color); /* Change title color */
+	font-size: 18px; /* Increase title font size */
 	padding-left: 20px;
-	font-weight: 650;
+	font-weight: 700; /* Increase title font weight */
 }
 
 .card-body {
-	padding-top: 40px;
-	font-size: 15px;
+	padding-top: 20px; /* Reduce padding between title and body */
+	font-size: 16px; /* Increase body font size */
+	color: #333; /* Change body text color */
+}
+
+.card-text {
+	color: var(--accent-color); /* Change text color for special text */
+	font-size: 24px; /* Increase text font size */
+	padding-left: 20px;
+	font-weight: 700; /* Increase text font weight */
 }

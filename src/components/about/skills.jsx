@@ -1,12 +1,5 @@
 import React from "react";
-import {
-	FaHtml5,
-	FaCss3,
-	FaJs,
-	FaReact,
-	FaGit,
-	FaGithub,
-} from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs, FaReact } from "react-icons/fa";
 import { DiMongodb, DiNodejs } from "react-icons/di";
 
 import "./styles/skills.css";
@@ -17,15 +10,11 @@ const Skills = () => {
 		{ icon: <FaCss3 />, name: "CSS3" },
 		{ icon: <FaJs />, name: "JavaScript" },
 		{ icon: <FaReact />, name: "React.js" },
-		{ icon: <FaGit />, name: "Git" },
-		{ icon: <FaGithub />, name: "GitHub" },
 	];
 
 	const backEndSkills = [
 		{ icon: <DiMongodb />, name: "MongoDB" },
 		{ icon: <DiNodejs />, name: "Node.js" },
-
-		// Add more back-end skills as needed
 	];
 
 	return (

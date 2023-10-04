@@ -5,7 +5,6 @@ const INFO = {
 		email: "ravkeerat_singh@outlook.com",
 		phone: "+1(647)-928-9905",
 		location: "Toronto, Ontario",
-		logo: "../logo.png",
 	},
 
 	socials: {
@@ -80,14 +79,6 @@ const INFO = {
 			linkText: "Quote Generator ",
 			Github: "https://github.com/Ravkeerat02/Quote-generator",
 			link: "https://ravkeerat02.github.io/Quote-generator/",
-		},
-		{
-			title: "Buzz Chat - Web Applcation",
-			description:
-				"BuzzChat is a dynamic web application currently in development, designed to provide a seamless chatting experience. It serves as a platform to showcase my skills and contribute to real-time communication technology.",
-			linkText: "Buzz Chat",
-			Github: "https://github.com/Ravkeerat02/BuzzChat",
-			link: "https://github.com/Ravkeerat02/BuzzChat",
 		},
 		{
 			title: "CarHub ",

@@ -9,7 +9,6 @@ import {
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
 import INFO from "../data/user";
 import SEO from "../data/seo";
 
@@ -36,12 +35,6 @@ const Contact = () => {
 			<div className="page-content">
 				<NavBar active="contact" />
 				<div className="content-wrapper">
-					<div className="contact-logo-container">
-						<div className="contact-logo">
-							<Logo width={100} />
-						</div>
-					</div>
-
 					<div className="contact-container">
 						<div className="title contact-title">
 							Let's Connect!
