@@ -8,6 +8,8 @@ import Socials from "../components/about/socials";
 import Skills from "../components/about/skills";
 import INFO from "../data/user";
 import SEO from "../data/seo";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 import "./styles/about.css";
 
@@ -17,6 +19,26 @@ const About = () => {
 	}, []);
 
 	const currentSEO = SEO.find((item) => item.page === "about");
+
+	const handleDownload = () => {
+		// Create a temporary anchor element
+		const downloadLink = document.createElement("a");
+
+		// Set the href attribute to the path of your resume file
+		downloadLink.href = "/resume.pdf"; // Update this to the correct path of your resume file
+
+		// Set the download attribute to specify the file name
+		downloadLink.download = "RavkeeratSinghCV_1.pdf"; // Update the file name as desired
+
+		// Append the anchor element to the DOM
+		document.body.appendChild(downloadLink);
+
+		// Programmatically trigger a click event on the anchor element
+		downloadLink.click();
+
+		// Remove the anchor element from the DOM
+		document.body.removeChild(downloadLink);
+	};
 
 	return (
 		<React.Fragment>
@@ -71,6 +93,16 @@ const About = () => {
 							<Socials />
 						</div>
 					</div>
+
+					<a
+						class="btn line-btn-dark btn-icon btn-radius"
+						href="/RavkeeratSinghCV_1.pdf"
+						title="CV"
+						download="RavkeeratSinghCV_1.pdf"
+					>
+						<span>Download Resume</span>
+						<FontAwesomeIcon icon={faDownload} />
+					</a>
 					<div className="page-footer">
 						<Footer />
 					</div>
