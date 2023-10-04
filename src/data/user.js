@@ -3,6 +3,8 @@ const INFO = {
 		title: "Online Portfolio",
 		name: "Ravkeerat Singh",
 		email: "ravkeerat_singh@outlook.com",
+		phone: "+1(647)-928-9905",
+		location: "Toronto, Ontario",
 		logo: "../logo.png",
 	},
 

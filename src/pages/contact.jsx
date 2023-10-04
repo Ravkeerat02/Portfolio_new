@@ -1,10 +1,15 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+	faEnvelope,
+	faPhone,
+	faMapMarker,
+} from "@fortawesome/free-solid-svg-icons";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
-
 import INFO from "../data/user";
 import SEO from "../data/seo";
 
@@ -33,30 +38,56 @@ const Contact = () => {
 				<div className="content-wrapper">
 					<div className="contact-logo-container">
 						<div className="contact-logo">
-							<Logo width={46} />
+							<Logo width={100} />
 						</div>
 					</div>
 
 					<div className="contact-container">
 						<div className="title contact-title">
-							Let's Get in Touch: Ways to Connect with Me
+							Let's Connect!
 						</div>
 
 						<div className="subtitle contact-subtitle">
-							Thank you for your interest in getting in touch with
-							me. I welcome your feedback, questions, and
-							suggestions. If you have a specific question or
-							comment, please feel free to email me directly at
-							&nbsp;{" "}
-							<a href={`mailto:${INFO.main.email}`}>
-								{INFO.main.email}
-							</a>
+							Thank you for visiting my website! Whether you want
+							to discuss a project, ask a question, or just say
+							hello, I'd love to hear from you.
+						</div>
+						<br></br>
+						<div className="contact-options">
+							<div className="contact-option">
+								<FontAwesomeIcon
+									icon={faEnvelope}
+									className="contact-icon"
+								/>
+								<span>
+									Email:{" "}
+									<a href={`mailto:${INFO.main.email}`}>
+										{INFO.main.email}
+									</a>
+								</span>
+							</div>
+
+							<div className="contact-option">
+								<FontAwesomeIcon
+									icon={faPhone}
+									className="contact-icon"
+								/>
+								<span>Phone: {INFO.main.phone}</span>
+							</div>
+
+							<div className="contact-option">
+								<FontAwesomeIcon
+									icon={faMapMarker}
+									className="contact-icon"
+								/>
+								<span>Location: {INFO.main.location}</span>
+							</div>
 						</div>
 					</div>
+				</div>
 
-					<div className="page-footer">
-						<Footer />
-					</div>
+				<div className="page-footer">
+					<Footer />
 				</div>
 			</div>
 		</React.Fragment>
