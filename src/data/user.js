@@ -1,6 +1,6 @@
 const INFO = {
 	main: {
-		title: "Online Portfolio",
+		title: "Portfolio",
 		name: "Ravkeerat Singh",
 		email: "ravkeerat_singh@outlook.com",
 		phone: "+1(647)-928-9905",
@@ -10,7 +10,6 @@ const INFO = {
 	socials: {
 		github: "https://github.com/Ravkeerat02",
 		linkedin: "https://www.linkedin.com/in/ravkeerat-singh/",
-		behance: "https://www.behance.net/ravkeeratsingh",
 	},
 
 	homepage: {

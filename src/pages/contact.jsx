@@ -36,11 +36,9 @@ const Contact = () => {
 				<NavBar active="contact" />
 				<div className="content-wrapper">
 					<div className="contact-container">
-						<div className="title contact-title">
-							Let's Connect!
-						</div>
+						<div className="contact-title">Let's Connect!</div>
 
-						<div className="subtitle contact-subtitle">
+						<div className="contact-subtitle">
 							Thank you for visiting my website! Whether you want
 							to discuss a project, ask a question, or just say
 							hello, I'd love to hear from you.
@@ -54,8 +52,8 @@ const Contact = () => {
 								/>
 								<span>
 									Email:{" "}
-									<a href={`mailto:${INFO.main.email}`}>
-										{INFO.main.email}
+									<a href="mailto:ravkeerat_singh@outlook.com">
+										ravkeerat_singh@outlook.com
 									</a>
 								</span>
 							</div>
