@@ -35,20 +35,18 @@ const Projects = () => {
 				<div className="content-wrapper">
 					<div className="projects-logo-container"></div>
 					<div className="projects-container">
-						<div className="title projects-title">
+						<div className="projects-title">
 							Projects I've Worked On
 						</div>
 
 						<div className="projects-subtitle">
-							Explore my Projects Section, where I showcase
-							captivating applications developed on the dynamic
-							MERN stack – MongoDB, Express, React, and Node.js.
-							These innovative technologies drive my passion for
-							creating seamless web solutions. Delve into my work
-							here and on GitHub to witness my ongoing journey of
-							learning and growth. Join me in this coding
-							adventure, where the limitless potential of the MERN
-							stack fuels our creativity!
+							Welcome to my world of MERN stack projects! I'm
+							constantly crafting innovative web solutions with
+							MongoDB, Express, React, and Node.js. Join me on
+							this exciting journey of learning and growth as we
+							explore the limitless potential of these
+							technologies. Stay tuned for more exciting
+							developments!
 						</div>
 						<br />
 						<div className="github-link">

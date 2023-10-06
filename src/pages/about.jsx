@@ -56,7 +56,7 @@ const About = () => {
 				</div>
 			</div>
 			<a
-				className="btn line-btn-dark btn-icon btn-radius"
+				className="btn line-btn-dark btn-icon btn-radius download-btn"
 				href="/RavkeeratSinghCV_1.pdf"
 				title="CV"
 				download="RavkeeratSinghCV_1.pdf"

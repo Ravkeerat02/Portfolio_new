@@ -98,6 +98,16 @@ body {
 	display: none;
 }
 
+.download-container {
+	position: relative;
+}
+/* Add a new class to style the download button */
+.download-btn {
+	position: relative;
+	right: 75px;
+	left: 75px;
+}
+
 @media (max-width: 1024px) {
 	.about-logo {
 		z-index: 100;
