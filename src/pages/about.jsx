@@ -8,7 +8,6 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import "./styles/about.css";
 
 const About = () => {
 	useEffect(() => {
@@ -18,7 +17,7 @@ const About = () => {
 	const currentSEO = SEO.find((item) => item.page === "about");
 
 	return (
-		<div className="about-page">
+		<div className="bg-gray-100 min-h-screen">
 			<Helmet>
 				<title>{`About | ${INFO.main.title}`}</title>
 				<meta name="description" content={currentSEO.description} />
@@ -27,43 +26,42 @@ const About = () => {
 					content={currentSEO.keywords.join(", ")}
 				/>
 			</Helmet>
+
 			<NavBar active="about" />
-			<div className="content-wrapper">
-				<div className="about-container">
-					<div className="about-main">
-						<div className="about-right-side">
-							<h1
-								className="about-title"
-								dangerouslySetInnerHTML={{
-									__html: INFO.about.title,
-								}}
-							></h1>
-							<p className="about-subtitle">
-								{INFO.about.description}
-							</p>
-							<Skills />
-						</div>
-						<div className="about-left-side">
-							{/* Your image code here */}
-							<div className="about-socials">
-								<Socials />
-							</div>
-						</div>
+
+			<div className="container mx-auto py-12 px-4">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+					<div className="about-right-side">
+						<h1
+							className="text-4xl md:text-5xl font-bold mb-4"
+							dangerouslySetInnerHTML={{
+								__html: INFO.about.title,
+							}}
+						></h1>
+						<p className="text-lg mb-6">{INFO.about.description}</p>
+						<Skills />
 					</div>
-					<div className="about-socials-mobile">
-						<Socials />
+
+					<div className="about-left-side">
+						{/* Your image code here */}
+						<div className="about-socials">
+							<Socials />
+						</div>
 					</div>
 				</div>
+
+				<div className="mt-8">
+					<a
+						href="/RavkeeratSinghCV_1.pdf"
+						download="RavkeeratSinghCV_1.pdf"
+						className="btn bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded inline-flex items-center"
+					>
+						<span>Download Resume</span>
+						<FontAwesomeIcon icon={faDownload} className="ml-2" />
+					</a>
+				</div>
 			</div>
-			<a
-				className="btn line-btn-dark btn-icon btn-radius download-btn"
-				href="/RavkeeratSinghCV_1.pdf"
-				title="CV"
-				download="RavkeeratSinghCV_1.pdf"
-			>
-				<span>Download Resume</span>
-				<FontAwesomeIcon icon={faDownload} />
-			</a>
+
 			<Footer />
 		</div>
 	);

@@ -19,7 +19,7 @@ const Skills = () => {
 
 	return (
 		<div className="skills-section">
-			<h2>Front-End Development Skills</h2>
+			<h2 className="font-bold">Front-End Development Skills</h2>
 			<div className="skills-row">
 				{frontEndSkills.map((skill, index) => (
 					<div className="skill" key={index}>
@@ -28,7 +28,7 @@ const Skills = () => {
 					</div>
 				))}
 			</div>
-			<h2>Back-End Development Skills</h2>
+			<h2 className="font-bold">Back-End Development Skills</h2>
 			<div className="skills-row">
 				{backEndSkills.map((skill, index) => (
 					<div className="skill" key={index}>
