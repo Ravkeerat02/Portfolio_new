@@ -1,51 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
 import INFO from "../data/user";
 import SEO from "../data/seo";
 
-import "./styles/homepage.css";
-
 const Homepage = () => {
-	const [stayLogo, setStayLogo] = useState(false);
 	const [logoSize, setLogoSize] = useState(80);
-	const [oldLogoSize, setOldLogoSize] = useState(80);
-
-	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, []);
 
 	useEffect(() => {
 		const handleScroll = () => {
 			let scroll = Math.round(window.pageYOffset, 2);
-
 			let newLogoSize = 80 - (scroll * 4) / 10;
-
-			if (newLogoSize < oldLogoSize) {
-				if (newLogoSize > 40) {
-					setLogoSize(newLogoSize);
-					setOldLogoSize(newLogoSize);
-					setStayLogo(false);
-				} else {
-					setStayLogo(true);
-				}
-			} else {
-				setLogoSize(newLogoSize);
-				setStayLogo(false);
-			}
+			setLogoSize(newLogoSize > 40 ? newLogoSize : 40);
 		};
 
 		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
-	}, [logoSize, oldLogoSize]);
+	}, []);
 
 	const currentSEO = SEO.find((item) => item.page === "home");
 
 	return (
-		<React.Fragment>
-			{/* Playing with HTML content */}
+		<div className="min-h-screen bg-gray-100 text-gray-800 font-sans ">
 			<Helmet>
 				<title>{INFO.main.title}</title>
 				<meta name="description" content={currentSEO.description} />
@@ -55,43 +32,25 @@ const Homepage = () => {
 				/>
 			</Helmet>
 
-			<div className="page-content">
-				<NavBar active="home" />
-				<div className="content-wrapper">
-					<div className="homepage-container">
-						<div className="homepage-first-area">
-							<div className="homepage-first-area-left-side">
-								<div className="title homepage-title">
-									{INFO.homepage.title}
-								</div>
+			<NavBar active="home" className="pr-8" />
 
-								<div className="subtitle homepage-subtitle">
-									<p className="homepage-description">
-										{INFO.homepage.description}
-									</p>
-								</div>
-							</div>
-
-							<div className="homepage-first-area-right-side">
-								<div className="homepage-image-container">
-									<div className="homepage-image-wrapper">
-										{/* <img
-											src="homepage.jpg"
-											alt="about"
-											className="homepage-image"
-										/> */}
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div className="page-footer">
-							<Footer />
+			<div className="container mx-auto py-12 px-4">
+				<div className="bg-white rounded-lg shadow-lg p-8">
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+						<div>
+							<h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+								{INFO.homepage.title}
+							</h1>
+							<p className="text-base md:text-lg lg:text-xl mb-6">
+								{INFO.homepage.description}
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</React.Fragment>
+
+			<Footer />
+		</div>
 	);
 };
 

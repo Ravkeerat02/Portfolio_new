@@ -3,10 +3,9 @@
 	"version": "1.1.0",
 	"description": "Personal portfolio template built using Reactjs",
 	"author": {
-		"name": "Tharindu N. Madhusanka",
-		"email": "mail@tharindu.dev"
+		"name": "Ravkeerat Singh",
+		"email": "ravkeerat_singh@outlook.com"
 	},
-	"license": "MIT",
 	"private": true,
 	"dependencies": {
 		"@fortawesome/fontawesome-free-solid": "^5.0.13",
