@@ -5,6 +5,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	position: relative;
 }
 
 .content {
@@ -17,7 +18,11 @@ body {
 	padding: 25px;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #f0f0f0; /* Add a background color for visibility */
+	background-color: #000;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	color: #fff;
 }
 
 .footer-links,
@@ -36,7 +41,7 @@ body {
 
 .footer-nav-link-item {
 	font-weight: bold;
-	font-size: 14px; /* Adjust font size for better readability */
+	font-size: 14px;
 }
 
 .footer-nav-link-list a {
