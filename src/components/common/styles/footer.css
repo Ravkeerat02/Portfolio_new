@@ -57,3 +57,17 @@ body {
 	color: var(--tertiary-color);
 	font-size: 14px;
 }
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+	body {
+		font-size: 14px; /* Adjust the font size for smaller screens */
+	}
+
+	.footer {
+		padding: 15px; /* Reduce padding for smaller screens */
+	}
+
+	.footer-nav-link-item {
+		font-size: 12px; /* Reduce font size for smaller screens */
+	}
+}

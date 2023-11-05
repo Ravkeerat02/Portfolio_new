@@ -29,8 +29,8 @@ const About = () => {
 
 			<NavBar active="about" />
 
-			<div className="container mx-auto py-12 px-4">
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+			<div className="container mx-auto py-8 px-4 md:py-16 md:px-8">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
 					<div className="about-right-side">
 						<h1
 							className="text-4xl md:text-5xl font-bold mb-4"
@@ -52,8 +52,8 @@ const About = () => {
 
 				<div className="mt-8">
 					<a
-						href="/RavkeeratSinghCV_1.pdf"
-						download="RavkeeratSinghCV_1.pdf"
+						href="/RavkeeratSinghCV_2.pdf"
+						download="RavkeeratSinghCV_2.pdf"
 						className="btn bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded inline-flex items-center"
 					>
 						<span>Download Resume</span>
