@@ -9,50 +9,59 @@ import {
 
 import INFO from "../../data/user";
 
-import "./styles/socials.css";
-
 const Socials = () => {
 	return (
-		<div className="socials">
-			<h2>Connect with me on</h2>
-			<div className="social">
-				<a href={INFO.socials.github} target="_blank" rel="noreferrer">
-					<div className="social-icon">
-						<FontAwesomeIcon
-							icon={faGithub}
-							className="social-icon"
-						/>
-					</div>
-					<div className="social-text">Follow on GitHub</div>
-				</a>
-			</div>
-			<div className="social">
-				<a
-					href={INFO.socials.linkedin}
-					target="_blank"
-					rel="noreferrer"
-				>
-					<div className="social-icon">
-						<FontAwesomeIcon
-							icon={faLinkedin}
-							className="social-icon"
-						/>
-					</div>
-					<div className="social-text">Follow on LinkedIn</div>
-				</a>
-			</div>
-
-			<div className="email">
-				<div className="email-wrapper">
+		<div className="mb-8">
+			<h2 className="text-2xl font-semibold mb-4">Connect with me on</h2>
+			<div className="flex items-center mb-4">
+				<div className="mr-4">
+					<FontAwesomeIcon
+						icon={faGithub}
+						className="text-3xl text-gray-600"
+					/>
+				</div>
+				<div>
 					<a
-						href={`mailto:${INFO.main.email}`}
+						href={INFO.socials.github}
 						target="_blank"
 						rel="noreferrer"
+						className="text-blue-500 hover:underline"
 					>
-						<div className="social-icon">
-							<FontAwesomeIcon icon={faEnvelope} />
-						</div>
-						<div className="social-text">{INFO.main.email}</div>
+						Follow on GitHub
+					</a>
+				</div>
+			</div>
+			<div className="flex items-center mb-4">
+				<div className="mr-4">
+					<FontAwesomeIcon
+						icon={faLinkedin}
+						className="text-3xl text-blue-600"
+					/>
+				</div>
+				<div>
+					<a
+						href={INFO.socials.linkedin}
+						target="_blank"
+						rel="noreferrer"
+						className="text-blue-500 hover:underline"
+					>
+						Follow on LinkedIn
+					</a>
+				</div>
+			</div>
+			<div className="flex items-center">
+				<div className="mr-4">
+					<FontAwesomeIcon
+						icon={faEnvelope}
+						className="text-3xl text-green-500"
+					/>
+				</div>
+				<div>
+					<a
+						href={`mailto:${INFO.main.email}`}
+						className="text-green-500 hover:underline"
+					>
+						{INFO.main.email}
 					</a>
 				</div>
 			</div>

@@ -44,7 +44,7 @@ const About = () => {
 
 					<div className="about-left-side">
 						{/* Your image code here */}
-						<div className="about-socials">
+						<div className="mt-8">
 							<Socials />
 						</div>
 					</div>
