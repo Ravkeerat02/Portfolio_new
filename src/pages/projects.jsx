@@ -26,18 +26,13 @@ const Projects = () => {
 				/>
 			</Helmet>
 
-			{/* <div className="bg-gray-800 text-white py-2"> */}
-			<div className="container mx-auto">
-				<h1 className="text-2xl md:text-3xl font-bold">
-					Projects I've Worked On
-				</h1>
-			</div>
-			{/* </div> */}
-
 			<NavBar active="projects" />
 
 			<div className="container mx-auto py-12 px-4">
 				<div className="text-center mb-8">
+					<h1 className="text-2xl md:text-3xl font-bold mt-8">
+						Projects I've Worked On
+					</h1>
 					<p className="text-lg mt-4">
 						Welcome to my world of MERN stack projects! I'm
 						constantly crafting innovative web solutions with
@@ -61,7 +56,7 @@ const Projects = () => {
 				</div>
 
 				<div className="overflow-x-auto">
-					<table className="min-w-full table-auto border-collapse border border-gray-300">
+					<table className="min-w-full   border-gray-300">
 						<tbody>
 							<AllProjects />
 						</tbody>
