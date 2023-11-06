@@ -63,7 +63,7 @@ const INFO = {
 	},
 	projects: [
 		{
-			title: "Time Master Application - Simplifying Employee Time Management",
+			title: "Time Master Application",
 			description: `• Created a user-friendly application enabling employees to view schedules, clock in/out, request time off, and update passwords.
 			• Implemented manager functionalities for employee management, schedule updates, and announcements.`,
 			linkText: "Time Master Application",
@@ -72,7 +72,7 @@ const INFO = {
 		},
 
 		{
-			title: "Quote Generator - A Simple Quote Generator",
+			title: "Quote Generator ",
 			description:
 				"Developed a webpage application that generates quotes and allows sharing on Twitter, translation into multiple languages, and text-to-speech functionality. ",
 			linkText: "Quote Generator ",

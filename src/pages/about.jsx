@@ -17,7 +17,7 @@ const About = () => {
 	const currentSEO = SEO.find((item) => item.page === "about");
 
 	return (
-		<div className="bg-gray-100 min-h-screen">
+		<div className="bg-gray-100 min-h-screen mt-10 ">
 			<Helmet>
 				<title>{`About | ${INFO.main.title}`}</title>
 				<meta name="description" content={currentSEO.description} />
