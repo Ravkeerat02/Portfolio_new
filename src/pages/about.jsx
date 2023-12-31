@@ -17,7 +17,7 @@ const About = () => {
 	const currentSEO = SEO.find((item) => item.page === "about");
 
 	return (
-		<div className="bg-gray-100 min-h-screen mt-10 ">
+		<div className="bg-gray-100 min-h-screen mt-10">
 			<Helmet>
 				<title>{`About | ${INFO.main.title}`}</title>
 				<meta name="description" content={currentSEO.description} />
@@ -39,11 +39,9 @@ const About = () => {
 							}}
 						></h1>
 						<p className="text-lg mb-6">{INFO.about.description}</p>
-						<Skills />
 					</div>
 
 					<div className="about-left-side">
-						{/* Your image code here */}
 						<div className="mt-8">
 							<Socials />
 						</div>
@@ -51,9 +49,53 @@ const About = () => {
 				</div>
 
 				<div className="mt-8">
+					<h2 className="text-2xl font-semibold mb-4">Education</h2>
+					<ul>
+						{INFO.education.map((edu, index) => (
+							<li key={index} className="mb-4">
+								<strong>{edu.degree}</strong> - {edu.school} (
+								{edu.graduationYear})
+								{edu.certification && (
+									<div className="ml-4">
+										<h3 className="text-lg font-semibold mb-2">
+											Certification:
+										</h3>
+										<ul>
+											<li>
+												<strong>
+													{edu.certification}
+												</strong>{" "}
+												{edu.issuer} (
+												{edu.link ? (
+													<a
+														href={edu.link}
+														target="_blank"
+														rel="noopener noreferrer"
+													>
+														View Certification
+													</a>
+												) : (
+													"No link available"
+												)}
+												)
+											</li>
+										</ul>
+									</div>
+								)}
+							</li>
+						))}
+					</ul>
+				</div>
+
+				<div className="mt-8">
+					<h2 className="text-2xl font-semibold mb-4">Skills</h2>
+					<Skills />
+				</div>
+
+				<div className="mt-8">
 					<a
-						href="/RavkeeratSinghCV_2.pdf"
-						download="RavkeeratSinghCV_2.pdf"
+						href="/RavkeeratSinghFrontEnd.pdf"
+						download="RavkeeratSinghFrontEnd.pdf"
 						className="btn bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded inline-flex items-center"
 					>
 						<span>Download Resume</span>

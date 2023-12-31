@@ -26,16 +26,11 @@ const INFO = {
 					color: "#555",
 				}}
 			>
-				I am an aspiring software developer with a strong foundation in
-				the front-end stack, specifically the MERN stack. My passion for
-				technology and commitment to learning drive me to pursue a
-				career in software development. I am equipped with the necessary
-				skills and knowledge to create visually appealing and
-				user-friendly web applications. With a focus on front-end
-				technologies such as HTML, CSS, JavaScript, and proficiency in
-				frameworks like React, I am eager to contribute to innovative
-				projects and continue honing my expertise in the ever-evolving
-				world of software development.
+				Enthusiastic recent graduate in Front-End Development, equipped
+				with hands-on experience in React, JavaScript, and responsive
+				design. Adept at crafting visually appealing and user-friendly
+				interfaces. Eager to contribute innovative solutions and grow in
+				a dynamic team environment.
 			</p>
 		),
 	},
@@ -61,11 +56,23 @@ const INFO = {
 			</p>
 		),
 	},
+	education: [
+		{
+			degree: "Advanced Diploma - Computer Programming & Analaysis",
+			school: "George Brown College",
+			graduationYear: "2023",
+		},
+		{
+			certification: "Foundation of Cyber Security",
+			issuer: "Google ",
+			link: "Link to Certification (if applicable)",
+		},
+	],
 	projects: [
 		{
 			title: "Time Master Application",
-			description: `• Created a user-friendly application enabling employees to view schedules, clock in/out, request time off, and update passwords.
-			• Implemented manager functionalities for employee management, schedule updates, and announcements.`,
+			description:
+				"Web based application which can be used by employees as well as the employer to manage time of requests and approvals , manage the schedules and along with that stay updated with the latest news.",
 			linkText: "Time Master Application",
 			Github: "https://github.com/Ravkeerat02/Capstone-code",
 			link: "https://time-master.herokuapp.com/",
@@ -94,6 +101,14 @@ const INFO = {
 			linkText: "AI text summarizer",
 			Github: "https://github.com/Ravkeerat02/AI-Text",
 			link: "https://ai-text-six.vercel.app/",
+		},
+		{
+			title: "Spotify Clone",
+			description:
+				"Web based application which allows the user to play and search for the music and also to upload and udpoate their favourite songs.",
+			linkText: "Spotify Clone",
+			Github: "https://github.com/Ravkeerat02/SpotifyClone",
+			link: "https://github.com/Ravkeerat02/SpotifyClone",
 		},
 	],
 };
