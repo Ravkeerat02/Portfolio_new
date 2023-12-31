@@ -48,11 +48,11 @@ const About = () => {
 					</div>
 				</div>
 
-				<div className="mt-8">
+				<div className="mt-12">
 					<h2 className="text-2xl font-semibold mb-4">Education</h2>
 					<ul>
 						{INFO.education.map((edu, index) => (
-							<li key={index} className="mb-4">
+							<li key={index} className="mb-6">
 								<strong>{edu.degree}</strong> - {edu.school} (
 								{edu.graduationYear})
 								{edu.certification && (
@@ -87,12 +87,12 @@ const About = () => {
 					</ul>
 				</div>
 
-				<div className="mt-8">
+				<div className="mt-12">
 					<h2 className="text-2xl font-semibold mb-4">Skills</h2>
 					<Skills />
 				</div>
 
-				<div className="mt-8">
+				<div className="mt-12">
 					<a
 						href="/RavkeeratSinghFrontEnd.pdf"
 						download="RavkeeratSinghFrontEnd.pdf"
